@@ -1,2 +1,19 @@
 # Write algorithm to download ROS in Jetson Nano
-Open a new terminal.
+
+# Installation
+
+ git clone https://github.com/JetsonHacksNano/installROS.git
+ cd installROS
+./installROS.sh
+./installROS.sh -p ros-melodic-desktop -p ros-melodic-rgbd-launch
+
+# setupCatkinWorkspace.sh
+
+./setupCatkinWorkspace.sh [optionalWorkspaceName]
+gedit ~/.bashrc
+source ~/.bashrc
+roscore
+
+To see it running we try :
+rostopic list
+ 
